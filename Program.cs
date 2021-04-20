@@ -1,4 +1,5 @@
 ﻿using System;
+using BaltaOOP.ContentContext;
 
 namespace BaltaOOP
 {
@@ -6,7 +7,10 @@ namespace BaltaOOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var course = new Course();
+            
+
+            
         }
     }
 }
