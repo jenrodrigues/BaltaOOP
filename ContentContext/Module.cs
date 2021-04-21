@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using BaltaOOP.SharedContext;
 
 namespace BaltaOOP.ContentContext{
-   public class Module{
+   public class Module: Base{
         public Module(){
             Lectures = new List<Lecture>();
         }

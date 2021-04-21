@@ -1,13 +1,13 @@
 using System;
+using BaltaOOP.SharedContext;
 
 namespace BaltaOOP.ContentContext{
-    public abstract class Content{
-        public Content(){
-            //concentrando essa geracao de Guid na classe pai pra garantir 
-            //o SPOF: Single Point of Failure
-            Id = Guid.NewGuid();
+    public abstract class Content: Base{
+        public Content(string title, string url){
+            Title = title;
+            Url = url;
         }
-        public Guid Id{get; set;}
+
         public string Title{get; set;}
         public string Url{get; set;}
     }
